@@ -1,6 +1,7 @@
 Use python 3.7 language to practice Tensorflow 2.x.
 
 Dependence:
+
 -Python 3.7.10
 -tensorflow 2.1.0
 -tensorflow-gpu 2.1.0
