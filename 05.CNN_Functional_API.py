@@ -22,7 +22,7 @@ def my_model():
 
     x = layers.MaxPooling2D()(x)
 
-    x = layers.Conv2D(64, 5, padding='same', name='2_layer')(x)
+    x = layers.Conv2D(64, 3, padding='same', name='2_layer')(x)
     x = layers.BatchNormalization()(x)
     x = keras.activations.relu(x)
 
@@ -49,5 +49,5 @@ model.compile(
 )
 
 model.fit(x_train, y_train, batch_size=64, epochs=10, verbose=2)
-# The predict is about 90%, However the evaluate result is overfitting.
-model.evaluate(x_test, y_test, batch_size=32, verbose=2)
+# The predict is about 90%. Hower the test evaluate result is overfitting.
+model.evaluate(x_test, y_test, batch_size=64, verbose=2)
