@@ -50,5 +50,5 @@ model.compile(
 )
 
 model.fit(x_train, y_train, batch_size=64, epochs=10, verbose=2)
-# The predict is about 90%. Hower the test evaluate result is overfitting.
+# The predict is about 90%, However the evaluate result is overfitting.
 model.evaluate(x_test, y_test, batch_size=32, verbose=2)
