@@ -1,4 +1,4 @@
-Use python 3.7 language to practice Tensorflow 2.x.
+Use python 3.7 to practice Tensorflow 2.x.
 ===  
 Dependence:
 -------
