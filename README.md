@@ -5,6 +5,7 @@ Dependence:
 -Python 3.7.10  
 -tensorflow 2.1.0  
 -tensorflow-gpu 2.1.0  
+-numpy 1.19.5
 
 You can follow as the command to create the conda virtual environment to practice TF 2.x.
 -------
