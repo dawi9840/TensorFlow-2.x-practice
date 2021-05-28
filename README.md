@@ -10,7 +10,7 @@ Dependence:
 -------
 You can follow as the command to create the conda virtual environment to practice TF 2.x.
 ==== 
-$: conda create --name tf2_gpu python=3.7
-$: conda activate tf2_gpu
-$: conda install tensorflow-gpu==2.1.0
-$: pip install numpy==1.19.5
+$: conda create --name tf2_gpu python=3.7  
+$: conda activate tf2_gpu  
+$: conda install tensorflow-gpu==2.1.0  
+$: pip install numpy==1.19.5  
