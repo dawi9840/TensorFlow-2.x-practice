@@ -66,7 +66,7 @@ class Rest_Like(keras.Model):
         self.pool = layers.GlobalAveragePooling2D()
         self.classifier = layers.Dense(num_class)
 
-    def __call__(self, input_tensor, training=False):
+    def call(self, input_tensor, training=False):
         x = self.block1(input_tensor, training=training)
         x = self.block2(x, training=training)
         x = self.block3(x, training=training)
@@ -75,7 +75,7 @@ class Rest_Like(keras.Model):
 
     def model(self):
         x = keras.Input(shape=(28, 28, 1))
-        return self.classifier(x)
+        return keras.Model(inputs=[x], outputs=self.call(x))
 
 model = Rest_Like(num_class=10)
 
